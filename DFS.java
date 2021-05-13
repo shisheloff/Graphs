@@ -30,5 +30,6 @@ public class DFS {
             if (!visited[tmp])
                 dfs(tmp);
         }
+        System.out.println();
     }
 }

@@ -70,7 +70,7 @@ public class Kruscal {
                 }
             }
         }
-        System.out.printf("Минимальное расстояние = %.2f", minDistance);
+        System.out.printf("Минимальное расстояние = %.2f\n", minDistance);
     }
 }
 

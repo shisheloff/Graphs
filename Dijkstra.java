@@ -92,7 +92,7 @@ class Dijkstra {
             System.out.println(e.toString());
         }
         System.out.println("вес пути = " + distanceTo(v));
-
+        print();
         return path;
     }
 
@@ -126,11 +126,7 @@ class WeightedEdge {
 
     public int getFinalPeak() { return finalPeak; }     // получение конечной вершины
 
-    public String toString() {
-        return "{" +
-            " vert='" + getVert() + "'" +
-            ", finalPeak='" + getFinalPeak() + "'" +
-            ", weight='" + getWeight() + "'" +
-            "}";
+    public String toString(){
+        return String.format("%d->%d %.2f",vert,finalPeak,weight);
     }  
 }

@@ -84,6 +84,11 @@ class Edge implements Comparable<Edge> {
         this.weight = weight;
     }
 
+    public String toString(){
+        return String.format("%d - %d веса = %.2f", firstPeak, secondPeak, weight);
+    }
+
+
     // получение веса ребра
     public double weight() {
         return weight;
